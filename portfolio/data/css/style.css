@@ -802,3 +802,25 @@ p {
   transition: all 0.2s;
   text-decoration: none;
 }
+
+/*NAVIGation part navigation part navigation part */
+.navigation {
+}
+.navigation__button {
+}
+.navigation__background {
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+.navigation__nav {
+}
+.navigation__list {
+}
+.navigation_item {
+}
+.navigation_link {
+}
+
+
+/*cool POPU ON THE CARDS */
