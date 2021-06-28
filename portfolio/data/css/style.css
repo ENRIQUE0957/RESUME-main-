@@ -826,27 +826,27 @@ p {
 .popup {
   background-color: rgba(0, 0, 0, 0.651);
   height: 100vh;
-  width: 0%;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   opacity: 0;
-
+  visibility: hidden;
   transition: all 0.3s;
 }
-.popup-content {
+.popup__content {
   background-color: rgba(255, 255, 255, 0.925);
-  width: 0%;
+  width: 60%;
   height: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(0.5);
   display: table;
   opacity: 0;
   overflow: hidden;
-  transition: all 0.3s;
+  transition: all 0.4s 0.2s;
 }
 .popup_left {
   width: 32.333333%;
@@ -871,11 +871,21 @@ p {
   column-rule: 1px solid rgb(206, 205, 205);
   hyphens: auto;
 }
-.popup-content:target {
+.popup:target {
   opacity: 1;
-  width: 100%;
+  visibility: visible;
 }
-.popup-content:target {
+.popup-close,
+.popup-close:link,
+.popup-close:visited {
+  position: absolute;
+  top: 2.5rem;
+  right: 1.5rem;
+  color: #555;
+}
+
+/*animation that makes it look lije the content  is popping out */
+.popup:target .popup__content {
   opacity: 1;
-  width: 60%;
+  transform: translate(-50%, -50%) scale(1);
 }
