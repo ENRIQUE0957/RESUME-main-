@@ -413,6 +413,7 @@ blockquote {
   line-height: 145%;
   position: inline-block;
   margin-top: 10px;
+  text-align: center;
 }
 blockquote:before {
   content: "\201C";
@@ -499,6 +500,16 @@ btn-full1:link,
     yellow,
     rgba(255, 255, 255, 0.789)
   );
+}
+.card__side--back-2 {
+  background-image: linear-gradient(
+    to right bottom,
+    blue,
+    rgba(255, 255, 255, 0.685)
+  );
+}
+.card__side--back-3 {
+  background-image: linear-gradient(to right bottom, red, white);
 }
 .plan-box div {
   padding: 15px;
@@ -599,6 +610,7 @@ footer {
 p {
   color: rgb(121, 121, 121);
   font-size: 90%;
+  text-align: center;
 }
 /*----"sticky navigation"--*/
 .sticky {
@@ -729,6 +741,22 @@ p {
       rgba(255, 255, 255, 0.691)
     ),
     url(../css/img/hat.jpg);
+}
+.card_picture--2 {
+  background-image: linear-gradient(
+      to right bottom,
+      blue,
+      rgba(255, 255, 255, 0.726)
+    ),
+    url(../css/img/istockphoto-1094145182-612x612.jpg);
+}
+.card_picture--3 {
+  background-image: linear-gradient(
+      to right bottom,
+      red,
+      rgba(255, 255, 255, 0.678)
+    ),
+    url(../css/img/github.jpg);
 }
 .card_heading {
   font-size: 1.2rem;
