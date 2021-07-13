@@ -917,3 +917,20 @@ p {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1);
 }
+.checkbox-button {
+  background-color: rgb(255, 255, 255);
+  height: 7rem;
+  width: 7rem;
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  border-radius: 50%;
+}
+.navigation-icon {
+  height: 2px;
+  width: 2rem;
+  background-color: #555;
+  display: inline-block;
+  position: relative;
+  margin-top: 3.5rem;
+}
