@@ -919,18 +919,116 @@ p {
 }
 .checkbox-button {
   background-color: rgb(255, 255, 255);
-  height: 7rem;
-  width: 7rem;
+  height: 3.7rem;
+  width: 3.7rem;
   position: fixed;
   top: 3rem;
   right: 2rem;
   border-radius: 50%;
+  text-align: center;
+  z-index: 300000;
+  box-shadow: 1rem 2rem 3rem rgb(12, 12, 12);
 }
 .navigation-icon {
   height: 2px;
-  width: 2rem;
+  width: 1.5rem;
   background-color: #555;
   display: inline-block;
   position: relative;
-  margin-top: 3.5rem;
+  margin-top: 3.3rem;
+  top: -1.3rem;
+}
+.navigation-icon::before,
+.navigation-icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+  height: 2px;
+  width: 1.5rem;
+  display: inline-block;
+  background-color: rgb(119, 22, 22);
+}
+.navigation-icon::before {
+  top: -0.4rem;
+}
+.navigation-icon::after {
+  top: 0.4rem;
+}
+.checkbox-button:hover .navigation-icon::after {
+  top: 0.5rem;
+}
+.checkbox-button:hover .navigation-icon::before {
+  top: -0.5rem;
+}
+.navigation {
+  height: 17px;
+}
+.navigation-checkbox:checked ~ .navigation-background {
+  transform: scale(300);
+  background-color: rgb(0, 128, 117);
+  transition: all 0.7s;
+}
+.navigation-background {
+  height: 3rem;
+  width: 3rem;
+  z-index: 10000;
+  position: fixed;
+  border-radius: 50%;
+  transition: transform 0.7s cubic-bezier(0.86, 0, 0.07, 1);
+  background-color: rgb(0, 128, 117);
+  top: 3.1rem;
+  right: 2.3rem;
+}
+.navigation_nav {
+  opacity: 0;
+  backface-visibility: hidden;
+}
+.navigation-checkbox:checked ~ .navigation_nav {
+  width: 100%;
+  z-index: 10000;
+  opacity: 1;
+}
+.navigation-checkbox:checked .navigation-list {
+  height: 6rem;
+  width: 6rem;
+}
+.navigation_nav {
+  height: 100vh;
+}
+.navigation__list {
+  z-index: 2000000;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 45%;
+  left: 50%;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  list-style: none;
+}
+.navigation_item {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
+  background-size: 229%;
+  transition: all 0.4s;
+}
+.navigation_item:hover {
+  background-image: linear-gradient(
+    120deg,
+    transparent 0%,
+    transparent 50%,
+    white 50%
+  );
+  background-position: 100%;
+  transition: all 0.4s;
+  color: rgb(0, 128, 117);
 }
