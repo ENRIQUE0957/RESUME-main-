@@ -85,7 +85,7 @@ h2 {
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   letter-spacing: 1px;
 }
 h2:after {
@@ -99,7 +99,7 @@ h2:after {
 }
 h3 {
   font-size: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 25px;
   padding: 5px;
 }
 
@@ -618,7 +618,7 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.98);
+  background-color:rgb(3, 97, 81)
   box-shadow: 0 2px 2px #efefef;
   z-index: 9999;
 }
@@ -964,14 +964,14 @@ p {
 .navigation {
   height: 17px;
 }
-.navigation-checkbox:checked ~ .navigation-background {
+.navigation-checkbox:checked ~ .navigation-background-1 {
   transform: scale(200);
   background-color: rgb(0, 128, 117);
   transition: all 0.7s;
   z-index: 30000;
   transform: scale(80);
 }
-.navigation-background {
+.navigation-background-1 {
   height: 3rem;
   width: 3rem;
   z-index: 2000;
@@ -982,17 +982,17 @@ p {
   top: 3.1rem;
   right: 2.3rem;
 }
-.navigation_nav {
+.navigation-1 {
   display: none;
   opacity: 0;
   backface-visibility: hidden;
 }
-.navigation-checkbox:checked ~ .navigation_nav {
+.navigation-checkbox:checked ~ .navigation-1 {
   width: 100%;
   opacity: 1;
   display: block;
   position: fixed;
-  z-index: 40000;
+  z-index: 50000;
 }
 
 .navigation-checkbox:checked .navigation__list {
@@ -1001,7 +1001,7 @@ p {
 }
 .navigation {
 }
-.navigation_nav {
+.navigation-1 {
   height: 100vh;
   transition: all 0.7s cubic-bezier(0.68, -0.55, 0.265, 1.55);
   top: 0;
@@ -1042,4 +1042,8 @@ p {
   background-position: 100%;
   transition: all 0.4s;
   color: rgb(0, 128, 117);
+}
+.navigation-checkbox:checked .sticky.main-nav {
+  display: hidden;
+  opacity: 0;
 }
