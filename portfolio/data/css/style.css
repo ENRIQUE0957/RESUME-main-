@@ -738,7 +738,7 @@ p {
   background-image: linear-gradient(
       to right bottom,
       yellow,
-      rgba(255, 255, 255, 0.691)
+      rgba(255, 255, 255, 0.4)
     ),
     url(../css/img/hat.jpg);
 }
@@ -756,7 +756,7 @@ p {
       red,
       rgba(255, 255, 255, 0.678)
     ),
-    url(../css/img/github.jpg);
+    url(../css/img/pc-1.jpg);
 }
 .card_heading {
   font-size: 1.2rem;
