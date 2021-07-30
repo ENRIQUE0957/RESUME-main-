@@ -292,6 +292,7 @@ header {
 //-----Currently working on----/*/
 .steps-box {
   margin-top: 30px;
+  
 }
 .current-objectives {
   background-color: #f4f4f4;
@@ -317,7 +318,7 @@ header {
 .working-on div {
   color: #18ad90;
   border: 2px solid #18ad90;
-  float: left;
+  /*float: left;*/
   /*display: inline-block;*/
   border-radius: 50%;
   height: 55px;
@@ -325,7 +326,7 @@ header {
   text-align: center;
   padding: 5px;
   font-size: 150%;
-  margin-right: 25px;
+  margin-right:5px;
 }
 .btn-app img {
   height: 50px;
