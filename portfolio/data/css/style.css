@@ -14,12 +14,12 @@ body {
 html,
 body {
   background-color: #fff;
-  color: #555;
+  color:grey;
   font-family: "Lato", "Arial", "sans-serif";
   font-size: 20px;
   font-weight: 300;
   text-rendering: optimizeLegibility;
-
+  padding:1rem;
   scroll-behavior: smooth;
 }
 .clearfix {
@@ -60,7 +60,7 @@ body {
   clear: both;
 }
 section {
-  padding: 20px 0;
+  padding: 220px 0;
 }
 /*-------------Heading----------*/
 h1,
@@ -187,10 +187,19 @@ btn-full:link,
 .section-features .long-copy {
   margin-bottom: 30px;
 }
+.section-features{
+  background-image:linear-gradient(-45deg
+  , rgba(238, 118, 82, 0.788), rgba(231, 60, 126, 0.719), rgba(35, 165, 213, 0.671), rgba(35, 213, 171, 0.87));
+  transform:skewY(-5deg);
+}
 /*HEADER*/
 /*-------------------------------*/
 header {
-  background-image:url(../css/img/cool-background\ 1.png);
+  background-image:linear-gradient(
+    -45deg
+    , rgb(238, 118, 82), rgb(231, 60, 126, 0.616),rgb(35, 165, 213, 0.712), rgb(35, 213, 171, 0.63));
+  clip-path:polygon(0 0, 100% 0%,100% 90%,0 100%);
+  
   background-position: center;
   background-size:cover;
   height: 100vh;
@@ -393,9 +402,10 @@ h4 {
 }
 /*--------Motivational quotes--------*/
 .section-motivational {
-  background-image:url(../css/img/cool-background\ 1.png);
-  background-size: cover;
-  color: #fff;
+
+ 
+ 
+  background-color: #fff;
   background-attachment: fixed;
   animation:gradient 15s ease infinite;
 }
@@ -403,6 +413,7 @@ cite {
   font-size: 90%;
   margin-top: 25px;
   display: block;
+  color:black;
 }
 blockquote {
   padding: 2%;
@@ -411,7 +422,11 @@ blockquote {
   position: inline-block;
   margin-top: 10px;
   text-align: center;
+  color:black;
   
+}
+.about-me{
+  color:black;
 }
 blockquote:before {
   content: "\201C";
@@ -609,7 +624,7 @@ footer {
   color: #ddd;
 }
 p {
-  color: rgb(121, 121, 121);
+  color:#fff;
   font-size: 90%;
   text-align: center;
 }
@@ -651,6 +666,11 @@ p {
 .js--wp-3.animate__animated,
 .js--wp-4.animate__animated {
   opacity: 1;
+  transform:skewY(5deg);
+
+}
+.row--skewY{
+  transform:skewY(5deg);
 }
 .js--wp-2 {
   opacity: 0;
