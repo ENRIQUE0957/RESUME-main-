@@ -589,8 +589,8 @@ input[type="checkbox"] {
   float: left;
 }
 footer {
-  background-color: rgb(114, 114, 114);
-  padding: 60px;
+  background-color: rgb(156, 156, 156);
+  padding: 100px;
 }
 .social-links {
   list-style: none;
@@ -598,7 +598,7 @@ footer {
 }
 .footer-nav li {
   display: inline-block;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 .social-links li {
   display: inline-block;
@@ -614,10 +614,15 @@ footer {
 .social-links li a:link {
   text-decoration: none;
   border: 0;
-  color: rgb(75, 75, 75);
+  color: rgb(255, 255, 255);
   -webkit-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s;
+  font-size:22px;
+}
+
+ion-icon{
+  transform:translate(-100%,-85%);
 }
 .footer-nav li a:hover,
 .footer-nav li a:active {
@@ -1067,4 +1072,10 @@ p {
 .navigation-checkbox:checked .sticky.main-nav {
   display: hidden;
   opacity: 0;
+}
+.skills{
+  color:white;
+}
+.skill-sets{
+  color:white;
 }
