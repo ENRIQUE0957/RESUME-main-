@@ -59,7 +59,7 @@ $(document).ready(function(){
         
         
 })
-/*$('.js--section-features').waypoint(function(direction) {
+$('.js--section-features').waypoint(function(direction) {
 
     if (direction === "down") {
     
@@ -78,6 +78,6 @@ $(document).ready(function(){
 $(".js-scroll-to-projects").click(function(){
     $('html,body').animate({scrollTop:$('.js--section-projects').offset().top},1000)
 })
-*/
+
     
    

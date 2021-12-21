@@ -823,6 +823,9 @@ p {
 }
 .card_details li:not(:last-child) {
   border-bottom: 1px solid rgb(194, 194, 194);
+  font-size:45%;
+  margin-top:0.2rem;
+  padding:0.1rem;
 }
 .card_cta {
   position: absolute;
@@ -1081,7 +1084,19 @@ p {
 }
 .skills{
   color:white;
+  border-bottom:1px solid white;
 }
 .skill-sets{
   color:white;
+}
+.Skills-set{
+  color:white;
+  
+  
+
+}
+.Skills-set-skill{
+   color:white;
+   font-size:80%;
+   list-style:none;
 }
