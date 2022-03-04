@@ -777,7 +777,7 @@ p {
       blue,
       rgba(255, 255, 255, 0.726)
     ),
-    url(../css/img/istockphoto-1094145182-612x612.jpg);
+    url(../css/img/);
 }
 .card_picture--3 {
   background-image: linear-gradient(
@@ -823,9 +823,10 @@ p {
 }
 .card_details li:not(:last-child) {
   border-bottom: 1px solid rgb(194, 194, 194);
-  font-size:45%;
+  font-size:47%;
   margin-top:0.2rem;
   padding:0.1rem;
+  margin-bottom:0.8rem
 }
 .card_cta {
   position: absolute;
