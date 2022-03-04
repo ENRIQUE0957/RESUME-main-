@@ -777,7 +777,7 @@ p {
       blue,
       rgba(255, 255, 255, 0.726)
     ),
-    url(../css/img/);
+    url(../css/img/muffin.jpg);
 }
 .card_picture--3 {
   background-image: linear-gradient(
