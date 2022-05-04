@@ -44,7 +44,7 @@ body {
 }
 
 .col-1-of-3 {
-  width: calc((100% - 12rem) / 3);
+  width: calc((100% - 15rem) / 3);
 }
 .col-1-of-3:not(:last-child) {
   margin-right: 6rem;
@@ -804,7 +804,7 @@ p {
 .card_heading-span--1 {
   background-image: linear-gradient(
     to right bottom,
-    #555555db,
+    rgb(0 146 223 / 86%),
     rgba(255, 255, 255, 0.671)
   );
 }
