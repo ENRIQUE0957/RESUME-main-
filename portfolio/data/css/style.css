@@ -820,6 +820,7 @@ p {
   list-style: none;
   width: 80%;
   margin: 0 auto;
+  font-weight:400;
 }
 .card_details li:not(:last-child) {
   border-bottom: 1px solid rgb(194, 194, 194);
