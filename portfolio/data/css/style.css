@@ -489,7 +489,7 @@ btn-full1:link,
 }
 .card_side {
   transition: all 0.8s ease;
-  height: 30rem;
+  height: 38rem;
   position: absolute;
   top: 0;
   left: 0;
@@ -1101,4 +1101,27 @@ p {
    color:white;
    font-size:80%;
    list-style:none;
+}
+.Skills-set {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 0;
+}
+
+.Skills-set-skill {
+  margin-bottom: 6px;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.skills {
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+ion-icon {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 8px;
+  display: block;
 }
